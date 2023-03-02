@@ -1,0 +1,90 @@
+/* Write your code here. */
+
+.win-loss-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff33;
+  border-radius: 16px;
+  width: 60%;
+  height: 800%;
+  border: 3px solid #ffffff28;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.image-status {
+  width: 40%;
+  height: 40%;
+  background-size: cover;
+  order: -1;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.status {
+  font: bold 24px 'Roboto';
+  color: #ffffff;
+  margin: 0px;
+  margin-bottom: 30px;
+}
+
+.score-type {
+  font: bold 22px 'Roboto';
+  color: #ffffff;
+  margin: 0px;
+}
+
+.current-score {
+  font: bold 24px 'Roboto';
+  color: #6a59ff;
+  margin: 0px;
+}
+
+.button {
+  height: 44px;
+  width: 90px;
+  border: none;
+  background-color: #ffce27;
+  color: #3d3d3d;
+  margin-top: 30px;
+  font: 800 14px 'Roboto';
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .win-loss-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .image-status {
+    height: 300px;
+    width: 250px;
+    order: 0;
+  }
+
+  .status {
+    font-size: 36px;
+  }
+
+  .score-type {
+    font-size: 30px;
+  }
+
+  .current-score {
+    font-size: 42px;
+  }
+
+  .button {
+    width: 100px;
+  }
+}
